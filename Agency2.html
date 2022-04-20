@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type = "text/css" href = "style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Smart Agency landing Page</title>
+    </head>
+    <body>
+        <!--Menu+Logo-->
+        <div class="home" id="home">
+            <div class="header">
+                <div class="logo" a href="/"><img src="img/logo.png" alt=""></a></div>
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                    <script>
+                        $('#toggle').click(function() {
+                        $(this).toggleClass('active menu_thing');
+                        $('#overlay').toggleClass('open');
+                        });
+                    </script>
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#process">Working Process</a></li>
+                                <li><a href="#works">Featured Works</a></li>
+                                <li><a href="#services">Services we provide</a></li>
+                                <li><a href="#team">Team Chinen & Skills</Tem></a></li>
+                                <li><a href="#clients">Clients Said</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <script>
+                        $('#overlay a').each(function() {
+                            $(this).click(function(){
+                                $('#toggle').toggleClass('active menu_thing');
+                                $('#overlay').toggleClass('open');
+                            })
+                        });
+                    </script>
+            </div>
+            <!--Header-->
+            <div class="ft">
+                <h1><span style="color: #fc6f4e;">Smart</span>&nbsp;Agency Landing Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni
+                    quibusdam labore ad iste saepe hic, axime qui ipsum tempore beatae, volu tomi ptates
+                    doloremque rerum aspernatur dolorum at!</p>
+            </div>
+            <!--Message form-->
+            <div class="form" id="message">
+                    <h1><span style="color: #fc6f4e;">Send</span>&nbsp;A Message</h1>
+                    <form action="#">
+                        <input type="text" id="Your Name" name="Your Name" placeholder="Your Name"><br>
+                        <input type="email" id="Your E-mail" name="Your E-mail" placeholder="Your Email"><br>
+                        <textarea rows="4" placeholder="Your Message"></textarea>
+                        <input class="button" type="submit" value="Send Message">
+                    </form>
+            </div>
+        </div>
+        <!--Working process-->
+        <div class="process" id="process">
+            <div class="st">
+                <h1><span style="color: #fc6f4e;">Working</span>&nbsp;Process</h1>
+                    <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit Vestibulum bibend um vestibulum.</p>
+                    <div class="info">
+                        <div class="block">
+                            <div class="img" a href="/"><img src="img/block1.png" alt=""></a></div>
+                            <h1>Koc Koi Tomi</h1>
+                            <p>Lorem ipsum is dummy lorem very dumy</p>
+                            <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                        </div>
+                        <div class="block">
+                            <div class="img" a href="/"><img src="img/block2.png" alt=""></a></div>
+                            <h1>Koimona Set</h1>
+                            <p>Lorem ipsum is dummy you lorem very dumyL is</p>
+                            <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                        </div>
+                        <div class="block">
+                            <div class="img" a href="/"><img src="img/block3.png" alt=""></a></div>
+                            <h1>Setting Koire</h1>
+                            <p>Lorem ipsum is dummy lorem very yLorem ipsus</p>
+                            <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                        </div>
+                        <div class="block">
+                            <div class="img" a href="/"><img src="img/block4.png" alt=""></a></div>
+                            <h1>Ko Image Lare</h1>
+                            <p>Lorem ipsum is dummy ry dumyLorem ipsum is</p>
+                            <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--Featured works-->
+        <div class="works" id="works">
+            <h1><span style="color: #fc6f4e;">Featured</span>&nbsp;Works</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+        <div class="pictures">
+            <div class="blocks">
+                <div class="work"><video src="video/videoplay.mp4" controls width="360px" height="360px" poster="img/space.png"></video></div>
+                <div class="work"><audio src="music/audio.mp3" controls></audio></div>
+                <div class="work">
+                    <h2>Pricing table</h2>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>Price</td>
+                            <td>Stage</td>
+                            <td>Comment</td>
+                        </tr>
+                        <tr>
+                            <td>Basic</td>
+                            <td>$50</td>
+                            <td>Lorem</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Standard</td>
+                            <td>$100</td>
+                            <td>Nullam</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Advances</td>
+                            <td>#200</td>
+                            <td>Morbi</td>
+                            <td>None</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="work"></div>
+                <div class="work"></div>
+                <div class="work"></div>
+            </div>
+            <div class="blocks">
+                <div class="work"></div>
+                <div class="work"></div>
+                <div class="work"></div>
+            </div>
+        </div>
+        </div>
+        <!--Services-->
+        <div class="service" id="services">
+            <h1 class="title"><span style="color: #fc6f4e;">Services</span>&nbsp;We Provide</h1>
+            <p class="under">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga providet Libero.</p>
+            <div class="content">
+                <div class="comb">
+                    <div class="boxses" ><a href="#sl1"><img src="img/round.png" alt=""></a></div>
+                    <div class="boxses" ><a href="#sl2"><img src="img/settin.png"alt=""></a></div>
+                    <div class="boxses" ><a href="#sl3"><img src="img/search.png" alt=""></a></div>
+                    <div class="boxses" ><a href="#sl4"><img src="img/round.png" alt=""></a></div>
+                </div>
+                <div class="containers">
+                    <div class="container" id="sl1">
+                        <div class="text">
+                            <h1>Modern App Design</h1>
+                            <span class="line"></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+                                earum totam ad sint error porro. consectetur, sunt, aperiam. Magni
+                                rem optio distincio illum consequutur delectus nulla illo aperiam
+                                itaque cumque.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem undefacilis.
+                                <br>
+                                <br>
+                                Vitae eveniet quam rem unde facilis.</p>
+                                <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                            </div>
+                            <img class="picture" src="img/info-1.png" alt="">
+                        </div>
+                        <div class="container" id="sl2">
+                            <div class="text">
+                                <h1>Modern Play Design</h1>
+                                <span class="line"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+                                earum totam ad sint error porro. consectetur, sunt, aperiam. Magni
+                                rem optio distincio illum consequutur delectus nulla illo aperiam
+                                itaque cumque.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem undefacilis.
+                                <br>
+                                <br>
+                                Vitae eveniet quam rem unde facilis.</p>
+                                <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                            </div>
+                            <img class="picture" src="img/info-2.png" alt="">
+                        </div>
+                        <div class="container" id="sl3">
+                            <div class="text">
+                                <h1>Modern Web Design</h1>
+                                <span class="line"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+                                earum totam ad sint error porro. consectetur, sunt, aperiam. Magni
+                                rem optio distincio illum consequutur delectus nulla illo aperiam
+                                itaque cumque.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem undefacilis.
+                                <br>
+                                <br>
+                                Vitae eveniet quam rem unde facilis.</p>
+                                <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                            </div>
+                            <img class="picture" src="img/info-3.png" alt="">
+                        </div>
+                        <div class="container" id="sl4">
+                            <div class="text">
+                                <h1>Modern App Design</h1>
+                                <span class="line"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+                                earum totam ad sint error porro. consectetur, sunt, aperiam. Magni
+                                rem optio distincio illum consequutur delectus nulla illo aperiam
+                                itaque cumque.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem undefacilis.
+                                <br>
+                                <br>
+                                Vitae eveniet quam rem unde facilis.</p>
+                                <a href="#"><img src="img/plus.png" alt="">&emsp;Know More</a>
+                            </div>
+                            <img class="picture" src="img/info-1.png" alt="">
+                        </div>
+                </div>
+            </div>   
+        </div>
+        <div class="team" id="team">
+            <h1 class="th"><span style="color: #fc6f4e;">Team</span>&nbsp;Chinen & Skills</h1>
+            <p class="tp">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga providet Libero.</p>
+            <div class="people">
+                <div class="information">
+                    <div class="preview">
+                        <h1>Bedi Manos</h1>
+                        <p>UI/UX Parena</p>
+                        <img src="img/skill.png">
+                        <div class="social">
+                            <img src="img/twit.png">
+                            <img src="img/faceb.png">
+                            <img src="img/twit.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="preview">
+                        <h1>Al Rayhan</h1>
+                        <p>UI/UX Desgner</p>
+                        <img src="img/skill.png">
+                        <div class="social">
+                            <img src="img/twit.png">
+                            <img src="img/faceb.png">
+                            <img src="img/twit.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="preview">
+                        <h1>Ali Sayed</h1>
+                        <p>UI/UX Designer</p>
+                        <img src="img/skill.png">
+                        <div class="social">
+                            <img src="img/twit.png">
+                            <img src="img/faceb.png">
+                            <img src="img/twit.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review" id="clients">
+            <h1 class="rh"><span style="color: #fc6f4e;">Clients</span>&nbsp;Said</h1>
+            <p class="rt">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga providet Libero.</p>
+            <div class="clientSlideNavigate">
+                <p id="leftBtn">></p>
+                <div class="clientSlide">
+                    <div class="reviews">
+                        <div class="block-section">
+                            <div class="grade">
+                                <div class="avatar"></div>
+                                    <div class="Comment">
+                                        <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again"</p>
+                                        <p class="stars">★★★★★</p>
+                                        <h2><b>Kita Say</b>, <i>HK Director</i></h2>
+                                    </div>
+                            </div>
+                            <div class="grade">
+                                <div class="avatar"></div>
+                                    <div class="Comment">
+                                        <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again"</p>
+                                        <p class="stars">★★★★★</p>
+                                        <h2><b>Al Rayhan</b>, <i>UX Director</i></h2>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="block-section">
+                            <div class="grade">
+                                <div class="avatar"></div>
+                                <div class="Comment">
+                                    <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again"</p>
+                                    <p class="stars">★★★★★</p>
+                                    <h2><b>Kita Say</b>, <i>HK Director</i></h2>
+                                </div>
+                            </div>
+                            <div class="grade">
+                                <div class="avatar"></div>
+                                    <div class="Comment">
+                                        <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again"</p>
+                                        <p class="stars">★★★★★</p>
+                                        <h2><b>Al Rayhan</b>, <i>UX Director</i></h2>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="block-section">
+                            <div class="grade">
+                                <div class="avatar"></div>
+                                    <div class="Comment">
+                                        <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again"</p>
+                                        <p class="stars">★★★★★</p>
+                                        <h2><b>Kita Say</b>, <i>HK Director</i></h2>
+                                    </div>
+                            </div>
+                            <div class="grade">
+                                <div class="avatar"></div>
+                                    <div class="Comment">
+                                        <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again"</p>
+                                        <p class="stars">★★★★★</p>
+                                        <h2><b>Al Rayhan</b>, <i>UX Director</i></h2>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p id="rightBtn">></p>
+                <div class="lines">
+                    <hr class="line active">
+                    <hr class="line">
+                    <hr class="line">
+                </div>
+            </div>
+        </div>
+            <script>
+                const leftBtn = document.querySelector('#leftBtn');
+                const rightBtn = document.querySelector('#rightBtn');
+                const lines = document.querySelectorAll('.lines .line');
+                console.dir(lines);
+                let step = 0;
+                function clearLines(){
+                    lines.forEach((line)=>{
+                        line.classList.remove('active');
+                    });
+                }
+                leftBtn.addEventListener('click',()=>{
+                    clearLines();
+                    let reviews = document.querySelector('.reviews');     
+                    if(step < 0) step = step + 100;
+                    else step = 0;
+                    lines[Math.abs(step/100)].classList.add('active');
+                    reviews.style.left = step+"%";
+                    console.dir(reviews.style.left);
+                });
+                rightBtn.addEventListener('click',()=>{
+                    clearLines();
+                    let reviews = document.querySelector('.reviews');
+                    if(step > -200 ) step = step - 100;
+                    else step = -200;
+                    lines[Math.abs(step/100)].classList.add('active');
+                    reviews.style.left = step+"%";
+                    console.dir(reviews.style.left);
+                });
+                console.dir(leftBtn);
+                console.dir(rightBtn);
+            </script>
+        <div class="partners">
+            <div class="link">
+                <img src="img/partner1.png" alt="">
+                <img src="img/partner2.png" alt="">
+                <img src="img/partner3.png" alt="">
+                <img src="img/partner1.png" alt="">
+                <img src="img/partner2.png" alt="">
+                <img src="img/partner3.png" alt="">
+            </div>
+        </div>
+        <footer class="contacts">
+            <div><a href="#message"><button>Contact Us</button></a></div>
+            <div class="social-networks">
+                <div class="contact">
+                    <a href="https://www.facebook.com"><img src="img/facebook.png" alt=""></a>
+                </div>
+                <div class="contact">
+                    <a href="https://twitter.com"><img src="img/twitter.png" alt=""></a>
+                </div>
+                <div class="contact">
+                    <a href="https://twitter.com"><img src="img/site.png" alt=""></a>
+                </div>
+                <div class="contact">
+                    <a href="https://twitter.com"><img src="img/behance.png" alt=""></a>
+                </div>
+                <p>© 2015 - 2016 Deviserweb Ltd.</p>
+            </div>
+        </footer>
+        <!-- <script>
+             const button_container = document.querySelector('.button_container')
+                        const links = document.querySelectorAll('.overlay a');
+                        
+                        links.forEach((link)=>{
+                                link.addEventListener('click',(event)=>{
+                                    console.dir(button_container);
+                                    button_container.classList.toggle('active');
+                                    button_container.classList.toggle('menu_thing');
+                                    document.querySelector('#overlay').classList.toggle('open');
+                                });
+                        });
+        </script> -->
+    </body>
+</html>
